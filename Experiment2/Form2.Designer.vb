@@ -143,7 +143,7 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(89, 363)
+        Me.TextBox1.Location = New System.Drawing.Point(83, 363)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(171, 20)
         Me.TextBox1.TabIndex = 7
@@ -153,7 +153,7 @@ Partial Class Form2
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(47, 363)
+        Me.Label2.Location = New System.Drawing.Point(41, 363)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 20)
         Me.Label2.TabIndex = 8
@@ -164,7 +164,7 @@ Partial Class Form2
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(47, 396)
+        Me.Label3.Location = New System.Drawing.Point(41, 396)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 20)
         Me.Label3.TabIndex = 9
@@ -175,7 +175,7 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(47, 429)
+        Me.Label4.Location = New System.Drawing.Point(41, 429)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 20)
         Me.Label4.TabIndex = 10
@@ -186,7 +186,7 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(47, 462)
+        Me.Label5.Location = New System.Drawing.Point(41, 462)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(36, 20)
         Me.Label5.TabIndex = 11
@@ -194,21 +194,21 @@ Partial Class Form2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(89, 396)
+        Me.TextBox2.Location = New System.Drawing.Point(83, 396)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(171, 20)
         Me.TextBox2.TabIndex = 12
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(89, 429)
+        Me.TextBox3.Location = New System.Drawing.Point(83, 429)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(171, 20)
         Me.TextBox3.TabIndex = 13
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(89, 462)
+        Me.TextBox4.Location = New System.Drawing.Point(83, 462)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(171, 20)
         Me.TextBox4.TabIndex = 14
@@ -220,7 +220,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me._V1)
         Me.Panel1.Controls.Add(Me._V3)
         Me.Panel1.Controls.Add(Me._V2)
-        Me.Panel1.Location = New System.Drawing.Point(290, 352)
+        Me.Panel1.Location = New System.Drawing.Point(284, 352)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(273, 142)
         Me.Panel1.TabIndex = 15
@@ -271,7 +271,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(127, 507)
+        Me.Button2.Location = New System.Drawing.Point(121, 507)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(86, 41)
         Me.Button2.TabIndex = 16
@@ -280,7 +280,7 @@ Partial Class Form2
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(399, 507)
+        Me.Button3.Location = New System.Drawing.Point(393, 507)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 41)
         Me.Button3.TabIndex = 17

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         Me.ConnectionStatus = New System.Windows.Forms.Label()
@@ -55,7 +55,7 @@ Partial Class Form3
         '
         Me.ConnectionStatus.AutoSize = True
         Me.ConnectionStatus.ForeColor = System.Drawing.Color.DarkRed
-        Me.ConnectionStatus.Location = New System.Drawing.Point(278, 319)
+        Me.ConnectionStatus.Location = New System.Drawing.Point(263, 319)
         Me.ConnectionStatus.Name = "ConnectionStatus"
         Me.ConnectionStatus.Size = New System.Drawing.Size(73, 13)
         Me.ConnectionStatus.TabIndex = 39
@@ -63,7 +63,7 @@ Partial Class Form3
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(264, 275)
+        Me.Button4.Location = New System.Drawing.Point(249, 275)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 41)
         Me.Button4.TabIndex = 38
@@ -72,7 +72,7 @@ Partial Class Form3
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(414, 507)
+        Me.Button3.Location = New System.Drawing.Point(393, 507)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 41)
         Me.Button3.TabIndex = 37
@@ -81,7 +81,7 @@ Partial Class Form3
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(142, 507)
+        Me.Button2.Location = New System.Drawing.Point(121, 507)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(86, 41)
         Me.Button2.TabIndex = 36
@@ -95,7 +95,7 @@ Partial Class Form3
         Me.Panel1.Controls.Add(Me._I1)
         Me.Panel1.Controls.Add(Me._I3)
         Me.Panel1.Controls.Add(Me._I2)
-        Me.Panel1.Location = New System.Drawing.Point(305, 352)
+        Me.Panel1.Location = New System.Drawing.Point(284, 352)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(273, 142)
         Me.Panel1.TabIndex = 35
@@ -105,7 +105,7 @@ Partial Class Form3
         Me._IT.AutoSize = True
         Me._IT.BackColor = System.Drawing.Color.Transparent
         Me._IT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me._IT.Location = New System.Drawing.Point(15, 107)
+        Me._IT.Location = New System.Drawing.Point(15, 109)
         Me._IT.Name = "_IT"
         Me._IT.Size = New System.Drawing.Size(36, 20)
         Me._IT.TabIndex = 21
@@ -146,21 +146,21 @@ Partial Class Form3
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(104, 462)
+        Me.TextBox4.Location = New System.Drawing.Point(83, 462)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(171, 20)
         Me.TextBox4.TabIndex = 34
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(104, 429)
+        Me.TextBox3.Location = New System.Drawing.Point(83, 429)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(171, 20)
         Me.TextBox3.TabIndex = 33
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(104, 396)
+        Me.TextBox2.Location = New System.Drawing.Point(83, 396)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(171, 20)
         Me.TextBox2.TabIndex = 32
@@ -170,7 +170,7 @@ Partial Class Form3
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(62, 462)
+        Me.Label5.Location = New System.Drawing.Point(41, 462)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(36, 20)
         Me.Label5.TabIndex = 31
@@ -181,7 +181,7 @@ Partial Class Form3
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(62, 429)
+        Me.Label4.Location = New System.Drawing.Point(41, 429)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 20)
         Me.Label4.TabIndex = 30
@@ -192,7 +192,7 @@ Partial Class Form3
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(62, 396)
+        Me.Label3.Location = New System.Drawing.Point(41, 396)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 20)
         Me.Label3.TabIndex = 29
@@ -203,7 +203,7 @@ Partial Class Form3
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(62, 363)
+        Me.Label2.Location = New System.Drawing.Point(41, 363)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 20)
         Me.Label2.TabIndex = 28
@@ -211,7 +211,7 @@ Partial Class Form3
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(104, 363)
+        Me.TextBox1.Location = New System.Drawing.Point(83, 363)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(171, 20)
         Me.TextBox1.TabIndex = 27
@@ -232,7 +232,7 @@ Partial Class Form3
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Orange
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(154, 9)
+        Me.Label1.Location = New System.Drawing.Point(139, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(290, 34)
         Me.Label1.TabIndex = 22
@@ -242,7 +242,7 @@ Partial Class Form3
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(104, 51)
+        Me.PictureBox1.Location = New System.Drawing.Point(89, 51)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(420, 218)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -253,7 +253,7 @@ Partial Class Form3
         '
         Me.Button5.BackColor = System.Drawing.Color.Transparent
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(12, 3)
+        Me.Button5.Location = New System.Drawing.Point(6, 3)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(71, 59)
         Me.Button5.TabIndex = 20
@@ -319,7 +319,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Button5)
         Me.MaximizeBox = False
         Me.Name = "Form3"
-        Me.Text = "Form3"
+        Me.Text = "Parallel Circuit"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
