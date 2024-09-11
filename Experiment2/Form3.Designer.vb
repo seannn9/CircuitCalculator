@@ -47,23 +47,30 @@ Partial Class Form3
         Me.R1 = New System.Windows.Forms.Label()
         Me.R2 = New System.Windows.Forms.Label()
         Me.R3 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'ConnectionStatus
         '
         Me.ConnectionStatus.AutoSize = True
+        Me.ConnectionStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConnectionStatus.ForeColor = System.Drawing.Color.DarkRed
-        Me.ConnectionStatus.Location = New System.Drawing.Point(263, 319)
+        Me.ConnectionStatus.Location = New System.Drawing.Point(252, 53)
         Me.ConnectionStatus.Name = "ConnectionStatus"
-        Me.ConnectionStatus.Size = New System.Drawing.Size(73, 13)
+        Me.ConnectionStatus.Size = New System.Drawing.Size(102, 16)
         Me.ConnectionStatus.TabIndex = 39
         Me.ConnectionStatus.Text = "Disconnected"
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(249, 275)
+        Me.Button4.Location = New System.Drawing.Point(254, 9)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 41)
         Me.Button4.TabIndex = 38
@@ -72,7 +79,7 @@ Partial Class Form3
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(393, 507)
+        Me.Button3.Location = New System.Drawing.Point(393, 7)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 41)
         Me.Button3.TabIndex = 37
@@ -81,7 +88,7 @@ Partial Class Form3
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(121, 507)
+        Me.Button2.Location = New System.Drawing.Point(121, 7)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(86, 41)
         Me.Button2.TabIndex = 36
@@ -104,10 +111,10 @@ Partial Class Form3
         '
         Me._IT.AutoSize = True
         Me._IT.BackColor = System.Drawing.Color.Transparent
-        Me._IT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me._IT.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._IT.Location = New System.Drawing.Point(15, 109)
         Me._IT.Name = "_IT"
-        Me._IT.Size = New System.Drawing.Size(36, 20)
+        Me._IT.Size = New System.Drawing.Size(45, 20)
         Me._IT.TabIndex = 21
         Me._IT.Text = "IT ="
         '
@@ -115,10 +122,10 @@ Partial Class Form3
         '
         Me._I1.AutoSize = True
         Me._I1.BackColor = System.Drawing.Color.Transparent
-        Me._I1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me._I1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._I1.Location = New System.Drawing.Point(15, 10)
         Me._I1.Name = "_I1"
-        Me._I1.Size = New System.Drawing.Size(40, 20)
+        Me._I1.Size = New System.Drawing.Size(51, 20)
         Me._I1.TabIndex = 18
         Me._I1.Text = "I1 = "
         '
@@ -126,10 +133,10 @@ Partial Class Form3
         '
         Me._I3.AutoSize = True
         Me._I3.BackColor = System.Drawing.Color.Transparent
-        Me._I3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me._I3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._I3.Location = New System.Drawing.Point(15, 74)
         Me._I3.Name = "_I3"
-        Me._I3.Size = New System.Drawing.Size(36, 20)
+        Me._I3.Size = New System.Drawing.Size(45, 20)
         Me._I3.TabIndex = 20
         Me._I3.Text = "I3 ="
         '
@@ -137,10 +144,10 @@ Partial Class Form3
         '
         Me._I2.AutoSize = True
         Me._I2.BackColor = System.Drawing.Color.Transparent
-        Me._I2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me._I2.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._I2.Location = New System.Drawing.Point(15, 43)
         Me._I2.Name = "_I2"
-        Me._I2.Size = New System.Drawing.Size(36, 20)
+        Me._I2.Size = New System.Drawing.Size(45, 20)
         Me._I2.TabIndex = 19
         Me._I2.Text = "I2 ="
         '
@@ -169,10 +176,10 @@ Partial Class Form3
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(41, 462)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(36, 20)
+        Me.Label5.Size = New System.Drawing.Size(39, 20)
         Me.Label5.TabIndex = 31
         Me.Label5.Text = "VIN"
         '
@@ -180,7 +187,7 @@ Partial Class Form3
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(41, 429)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 20)
@@ -191,7 +198,7 @@ Partial Class Form3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(41, 396)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 20)
@@ -202,7 +209,7 @@ Partial Class Form3
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(41, 363)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 20)
@@ -230,7 +237,7 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Orange
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(139, 9)
         Me.Label1.Name = "Label1"
@@ -253,7 +260,7 @@ Partial Class Form3
         '
         Me.Button5.BackColor = System.Drawing.Color.Transparent
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(6, 3)
+        Me.Button5.Location = New System.Drawing.Point(9, 59)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(71, 59)
         Me.Button5.TabIndex = 20
@@ -263,7 +270,7 @@ Partial Class Form3
         '
         Me.R1.AutoSize = True
         Me.R1.BackColor = System.Drawing.Color.White
-        Me.R1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.R1.Location = New System.Drawing.Point(321, 176)
         Me.R1.Name = "R1"
         Me.R1.Size = New System.Drawing.Size(30, 20)
@@ -274,7 +281,7 @@ Partial Class Form3
         '
         Me.R2.AutoSize = True
         Me.R2.BackColor = System.Drawing.Color.White
-        Me.R2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R2.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.R2.Location = New System.Drawing.Point(399, 176)
         Me.R2.Name = "R2"
         Me.R2.Size = New System.Drawing.Size(30, 20)
@@ -285,22 +292,50 @@ Partial Class Form3
         '
         Me.R3.AutoSize = True
         Me.R3.BackColor = System.Drawing.Color.White
-        Me.R3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.R3.Location = New System.Drawing.Point(470, 176)
         Me.R3.Name = "R3"
         Me.R3.Size = New System.Drawing.Size(30, 20)
         Me.R3.TabIndex = 26
         Me.R3.Text = "R3"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.MediumPurple
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(604, 53)
+        Me.Panel2.TabIndex = 40
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.MediumPurple
+        Me.Panel3.Controls.Add(Me.Button3)
+        Me.Panel3.Controls.Add(Me.Button2)
+        Me.Panel3.Location = New System.Drawing.Point(0, 500)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(605, 60)
+        Me.Panel3.TabIndex = 41
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.MediumPurple
+        Me.Panel4.Controls.Add(Me.ConnectionStatus)
+        Me.Panel4.Controls.Add(Me.Button4)
+        Me.Panel4.Location = New System.Drawing.Point(0, 266)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(607, 80)
+        Me.Panel4.TabIndex = 42
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(599, 551)
-        Me.Controls.Add(Me.ConnectionStatus)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
@@ -314,7 +349,6 @@ Partial Class Form3
         Me.Controls.Add(Me.R2)
         Me.Controls.Add(Me.R1)
         Me.Controls.Add(Me.VIN)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button5)
         Me.MaximizeBox = False
@@ -323,6 +357,11 @@ Partial Class Form3
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -351,4 +390,7 @@ Partial Class Form3
     Friend WithEvents R1 As Label
     Friend WithEvents R2 As Label
     Friend WithEvents R3 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class
