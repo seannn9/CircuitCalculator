@@ -317,6 +317,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button5)
+        Me.MaximizeBox = False
         Me.Name = "Form3"
         Me.Text = "Form3"
         Me.Panel1.ResumeLayout(False)

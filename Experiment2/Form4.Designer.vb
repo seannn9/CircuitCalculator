@@ -40,6 +40,7 @@ Partial Class Form4
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(599, 551)
         Me.Controls.Add(Me.Button1)
+        Me.MaximizeBox = False
         Me.Name = "Form4"
         Me.Text = "Form4"
         Me.ResumeLayout(False)

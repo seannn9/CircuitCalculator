@@ -9,6 +9,7 @@ Public Class Form2
     Dim V1 As Double
     Dim V2 As Double
     Dim V3 As Double
+    Dim calculated As Boolean = False
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' Check if Form1 exist, if it does show it without creating a new one
@@ -21,51 +22,89 @@ Public Class Form2
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Get values from user input
-        Dim R1 As Double = Convert.ToDouble(TextBox1.Text)
-        Dim R2 As Double = Convert.ToDouble(TextBox2.Text)
-        Dim R3 As Double = Convert.ToDouble(TextBox3.Text)
-        Dim Vin As Double = Convert.ToDouble(TextBox4.Text)
-
-        'Update schematic to show values
-        Me.R1.Text = R1 & "Ω"
-        Me.R2.Text = R2 & "Ω"
-        Me.R3.Text = R3 & "Ω"
-        Me.VIN.Text = Vin & "V"
-
-        'Calculate the missing values
-        Dim RT As Double = R1 + R2 + R3
-        IT = Vin / RT
-        V1 = IT * R1
-        V2 = IT * R2
-        V3 = IT * R3
-
         'Show results
-        If V1 < 1 Then
-            _V1.Text = "V1 = " & Math.Round((V1 * 1000), 3) & " mV"
+        If String.IsNullOrEmpty(TextBox1.Text) Or
+                String.IsNullOrEmpty(TextBox2.Text) Or
+                String.IsNullOrEmpty(TextBox3.Text) Or
+                String.IsNullOrEmpty(TextBox4.Text) Then
+            MsgBox("Please fill in all input fields", vbExclamation, Title:="Warning")
         Else
-            _V1.Text = "V1 = " & Math.Round(V1, 3) & " V"
+            'Get values from user input
+            Dim R1 As Double = Convert.ToDouble(TextBox1.Text)
+            Dim R2 As Double = Convert.ToDouble(TextBox2.Text)
+            Dim R3 As Double = Convert.ToDouble(TextBox3.Text)
+            Dim Vin As Double = Convert.ToDouble(TextBox4.Text)
+
+            'Update schematic to show values
+            If R1 >= 1000000 Then
+                Me.R1.Text = Math.Round((R1 / 1000000), 2) & "MΩ"
+            ElseIf R1 >= 1000 Then
+                Me.R1.Text = Math.Round((R1 / 1000), 2) & "kΩ"
+            Else
+                Me.R1.Text = R1 & "Ω"
+            End If
+            If R2 >= 1000000 Then
+                Me.R2.Text = Math.Round((R2 / 1000000), 2) & "MΩ"
+            ElseIf R2 >= 1000 Then
+                Me.R2.Text = Math.Round((R2 / 1000), 2) & "kΩ"
+            Else
+                Me.R2.Text = R2 & "Ω"
+            End If
+            If R3 >= 1000000 Then
+                Me.R3.Text = Math.Round((R3 / 1000000), 2) & "MΩ"
+            ElseIf R3 >= 1000 Then
+                Me.R3.Text = Math.Round((R3 / 1000), 2) & "kΩ"
+            Else
+                Me.R3.Text = R3 & "Ω"
+            End If
+            If Vin >= 1000000 Then
+                Me.VIN.Text = Math.Round((Vin / 1000000), 2) & "MV"
+            ElseIf VIN >= 1000 Then
+                Me.R1.Text = Math.Round((Vin / 1000), 2) & "kV"
+            Else
+                Me.VIN.Text = Vin & "V"
+            End If
+
+            'Calculate the missing values
+            Dim RT As Double = R1 + R2 + R3
+            IT = Vin / RT
+            V1 = IT * R1
+            V2 = IT * R2
+            V3 = IT * R3
+
+            If V1 < 0.001 Then
+                _V1.Text = "V1 = " & Math.Round((V1 * 1000000), 3) & " µV"
+            ElseIf V1 < 1 Then
+                _V1.Text = "V1 = " & Math.Round((V1 * 1000), 3) & " mV"
+            Else
+                _V1.Text = "V1 = " & Math.Round(V1, 3) & " V"
+            End If
+
+            If V2 < 0.001 Then
+                _V2.Text = "V2 = " & Math.Round((V2 * 1000000), 3) & " µV"
+            ElseIf V2 < 1 Then
+                _V2.Text = "V2 = " & Math.Round((V2 * 1000), 3) & " mV"
+            Else
+                _V2.Text = "V2 = " & Math.Round(V2, 3) & " V"
+            End If
+
+            If V3 < 0.001 Then
+                _V3.Text = "V3 = " & Math.Round((V3 * 1000000), 3) & " µV"
+            ElseIf V3 < 1 Then
+                _V3.Text = "V3 = " & Math.Round((V3 * 1000), 3) & " mV"
+            Else
+                _V3.Text = "V3 = " & Math.Round(V3, 3) & " V"
+            End If
+
+            If IT < 0.001 Then
+                _IT.Text = "IT = " & Math.Round((IT * 1000000), 3) & " µA"
+            ElseIf IT < 1 Then
+                _IT.Text = "IT = " & Math.Round((IT * 1000), 3) & " mA"
+            Else
+                _IT.Text = "IT = " & Math.Round(IT, 3) & " A"
+            End If
+            calculated = True
         End If
-
-        If V2 < 1 Then
-            _V2.Text = "V2 = " & Math.Round((V2 * 1000), 3) & " mV"
-        Else
-            _V2.Text = "V2 = " & Math.Round(V2, 3) & " V"
-        End If
-
-        If V3 < 1 Then
-            _V3.Text = "V3 = " & Math.Round((V3 * 1000), 3) & " mV"
-        Else
-            _V3.Text = "V3 = " & Math.Round(V3, 3) & " V"
-        End If
-
-        If IT < 1 Then
-            _IT.Text = "IT = " & Math.Round((IT * 1000), 3) & " mA"
-        Else
-            _IT.Text = "IT = " & Math.Round(IT, 3) & " A"
-        End If
-
-
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -95,6 +134,8 @@ Public Class Form2
         Try
             If connection.State = ConnectionState.Closed Then
                 MsgBox("Please connect to the database first", vbExclamation, Title:="Warning")
+            ElseIf calculated = False Then
+                MsgBox("Please calculate first", vbExclamation, Title:="Warning")
             Else
                 If connection.State = ConnectionState.Closed Then
                     connection.Open()
@@ -105,25 +146,34 @@ Public Class Form2
                 cmd.Parameters.AddWithValue("@R2", R2.Text)
                 cmd.Parameters.AddWithValue("@R3", R3.Text)
                 cmd.Parameters.AddWithValue("@VIN", VIN.Text)
-                If V1 < 1 Then
+
+                If V1 < 0.001 Then
+                    cmd.Parameters.AddWithValue("@V1", (Math.Round((V1 * 1000000), 3) & "µV"))
+                ElseIf V1 < 1 Then
                     cmd.Parameters.AddWithValue("@V1", (Math.Round((V1 * 1000), 3) & "mV"))
                 Else
                     cmd.Parameters.AddWithValue("@V1", (Math.Round(V1, 3) & "V"))
                 End If
 
-                If V2 < 1 Then
+                If V2 < 0.001 Then
+                    cmd.Parameters.AddWithValue("@V2", (Math.Round((V2 * 1000000), 3) & "µV"))
+                ElseIf V2 < 1 Then
                     cmd.Parameters.AddWithValue("@V2", (Math.Round((V2 * 1000), 3) & "mV"))
                 Else
                     cmd.Parameters.AddWithValue("@V2", (Math.Round(V2, 3) & "V"))
                 End If
 
-                If V3 < 1 Then
+                If V3 < 0.001 Then
+                    cmd.Parameters.AddWithValue("@V3", (Math.Round((V3 * 1000000), 3) & "µV"))
+                ElseIf V3 < 1 Then
                     cmd.Parameters.AddWithValue("@V3", (Math.Round((V3 * 1000), 3) & "mV"))
                 Else
                     cmd.Parameters.AddWithValue("@V3", (Math.Round(V3, 3) & "V"))
                 End If
 
-                If IT < 1 Then
+                If IT < 0.001 Then
+                    cmd.Parameters.AddWithValue("@IT", (Math.Round((IT * 1000000), 3) & "µA"))
+                ElseIf IT < 1 Then
                     cmd.Parameters.AddWithValue("@IT", (Math.Round((IT * 1000), 3) & "mA"))
                 Else
                     cmd.Parameters.AddWithValue("@IT", (Math.Round(IT, 3) & "A"))
@@ -140,6 +190,15 @@ Public Class Form2
                 TextBox2.Clear()
                 TextBox3.Clear()
                 TextBox4.Clear()
+                _V1.Text = "V1 ="
+                _V2.Text = "V2 ="
+                _V3.Text = "V3 ="
+                _IT.Text = "IT ="
+                VIN.Text = "V1"
+                R1.Text = "R1"
+                R2.Text = "R2"
+                R3.Text = "R3"
+                calculated = False
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
