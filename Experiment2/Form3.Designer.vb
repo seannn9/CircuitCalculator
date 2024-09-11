@@ -228,7 +228,7 @@ Partial Class Form3
         Me.VIN.AutoSize = True
         Me.VIN.BackColor = System.Drawing.Color.White
         Me.VIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VIN.Location = New System.Drawing.Point(116, 144)
+        Me.VIN.Location = New System.Drawing.Point(108, 148)
         Me.VIN.Name = "VIN"
         Me.VIN.Size = New System.Drawing.Size(36, 20)
         Me.VIN.TabIndex = 23
@@ -249,9 +249,9 @@ Partial Class Form3
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(89, 51)
+        Me.PictureBox1.Location = New System.Drawing.Point(94, 51)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(420, 218)
+        Me.PictureBox1.Size = New System.Drawing.Size(411, 218)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
@@ -271,7 +271,7 @@ Partial Class Form3
         Me.R1.AutoSize = True
         Me.R1.BackColor = System.Drawing.Color.White
         Me.R1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.R1.Location = New System.Drawing.Point(321, 176)
+        Me.R1.Location = New System.Drawing.Point(300, 176)
         Me.R1.Name = "R1"
         Me.R1.Size = New System.Drawing.Size(30, 20)
         Me.R1.TabIndex = 24
@@ -282,7 +282,7 @@ Partial Class Form3
         Me.R2.AutoSize = True
         Me.R2.BackColor = System.Drawing.Color.White
         Me.R2.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.R2.Location = New System.Drawing.Point(399, 176)
+        Me.R2.Location = New System.Drawing.Point(389, 176)
         Me.R2.Name = "R2"
         Me.R2.Size = New System.Drawing.Size(30, 20)
         Me.R2.TabIndex = 25
@@ -293,7 +293,7 @@ Partial Class Form3
         Me.R3.AutoSize = True
         Me.R3.BackColor = System.Drawing.Color.White
         Me.R3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.R3.Location = New System.Drawing.Point(470, 176)
+        Me.R3.Location = New System.Drawing.Point(449, 176)
         Me.R3.Name = "R3"
         Me.R3.Size = New System.Drawing.Size(30, 20)
         Me.R3.TabIndex = 26
@@ -330,8 +330,7 @@ Partial Class Form3
         '
         'Form3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(599, 551)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
@@ -352,6 +351,8 @@ Partial Class Form3
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button5)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(615, 590)
+        Me.MinimumSize = New System.Drawing.Size(615, 590)
         Me.Name = "Form3"
         Me.Text = "Parallel Circuit"
         Me.Panel1.ResumeLayout(False)

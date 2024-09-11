@@ -379,8 +379,7 @@ Partial Class Form4
         '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(599, 551)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
@@ -404,6 +403,8 @@ Partial Class Form4
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button5)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(615, 590)
+        Me.MinimumSize = New System.Drawing.Size(615, 590)
         Me.Name = "Form4"
         Me.Text = "Form4"
         Me.Panel1.ResumeLayout(False)

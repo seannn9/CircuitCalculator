@@ -112,8 +112,7 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(599, 551)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -122,6 +121,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(615, 590)
+        Me.MinimumSize = New System.Drawing.Size(615, 590)
         Me.Name = "Form1"
         Me.Text = "T-CPET411LA Experiment 2"
         Me.Panel1.ResumeLayout(False)

@@ -344,8 +344,7 @@ Partial Class Form2
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(599, 551)
         Me.Controls.Add(Me.Panel4)
@@ -367,6 +366,8 @@ Partial Class Form2
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(615, 590)
+        Me.MinimumSize = New System.Drawing.Size(615, 590)
         Me.Name = "Form2"
         Me.Text = "Series Circuit"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
